@@ -1,10 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
+
+	<title>Page Title</title>
+
+	<style>
+		/*Write your CSS code here*/
+		div {
+			width: 100px;
+			height: 100px;
+			border: 3px solid blue;
+      font-size:100px;
+		}
+
+    .Aclass{
+      transition: height 2s, background-color 4s;
+      color:red;
+    }
+    .Aclass:hover{
+      background-color:Black;
+      height: 200px;
+      width:500px;
+      transform:skew(20deg,20deg);
+    }
+
+    .Hclass{
+      transition: width 2s, background-color 4s; color:purple;
+    }
+    .Hclass:hover{
+      background-color:teal;
+      width:400px;
+      height: 250px;
+      transform: rotate(270deg)
+    }
+    
+    .Mclass{
+      transition: width 2s, background-color 4s;color:green;
+    }
+    .Mclass:hover{
+      background-color:blue;
+      width:200px;
+      height: 100px;
+    }
+
+    .Eclass{
+      transition: width 2s, background-color 4s;color:orange;
+    }
+    .Eclass:hover{
+      background-color:pink;
+      width:600px;
+      height: 300px;
+    }
+
+    .Dclass{
+      transition: width 2s, background-color 2s;color:black;
+    }
+    .Dclass:hover{
+      background-color:gold;
+      width:300px;
+      height:300px;
+      transform:translate(200px);
+    }
+
+	</style>
+
 </head>
 
 <body>
-</body>
+	<!--Write your HTML code here -->
+	
+	<p>Hover over each letter to see the transition effect:</p>
+
+	<div class = "Aclass">A</div>
+  <div class = "Hclass">H</div>
+  <div class = "Mclass">M</div>
+  <div class = "Eclass">E</div>
+  <div class = "Dclass">D</div>
+
+  </body>
 </html>
